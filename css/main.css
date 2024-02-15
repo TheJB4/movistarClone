@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 14%) 0 2px 2px 0;
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    margin: 0 8.2rem 0 0;
+}
+
+.itemHead {
+    margin: 0 4.2rem 0 0;
+    color: rgb(0 0 0 / 0.55);
+    font-size: 14px;
+}
+
+.itemHead:hover {
+    cursor: pointer;
+    color: #019df4;
+}
+
+.square {
+    margin: 5rem 0;
+    padding: 32px 120px 40px 120px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.236951);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 650px; 
+}
+
+.validate {
+    margin: 1.5rem 0 0 0 ;
+}
+
+.validate h1 {
+    font-weight: 300;
+    font-size: 30px;
+    color: rgb(0 0 0 / 0.55);
+}
+
+.formulario {
+    text-align: left;
+}
+
+.lbl {
+    margin: 1.5rem 0 1rem;
+}
+
+.lbl label {
+    font-weight: bold;
+    font-size: 15px;
+    color: #50535a;
+}
+
+input[type=text] {
+    padding: 12px 10px; 
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #515559;
+    font-weight: normal;
+    outline: none;
+    width: 100%;
+    height: 48px;
+}
+
+.ipt input:focus {
+    border: 1px solid #019df4;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),0 0 8px rgb(82 168 236 / 60%);
+}
+
+.ipt input:valid {
+    border: 2px solid #28a745 !important;
+}
+
+.small small {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container {
+    background: #0B2739;
+}
+
+.footer {
+    width: 85%;
+    text-align: left;
+    border-bottom: 1px solid #D3D4D3;
+    padding: 36px 0 20px 0;
+}
+
+.cardForm {
+    margin-top: 1rem;
+    display: none;
+}
+
+.ingrese {
+    margin-bottom: 1rem;
+}
+
+.card,
+.mmaa,
+.nombre,
+.denei,
+.cvv {
+    margin-bottom: 2rem;
+}
+
+.mmaa {
+    display: flex;
+    align-items: center;
+}
+
+.smallForm {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: .5rem;
+    color: #9e9e9e;
+}
+
+.card input,
+.denei input {
+    width: 85%;    
+}
+
+.mmaa input {
+    width: 36%;
+}
+
+#mes {
+    margin-right: 1.5rem;
+}
+
+#ano {
+    margin-left: 1.5rem;
+}
+
+.cvv {
+    width: 20%;
+    margin-bottom: 2rem;
+}
+
+.button input {
+    background-color: #019df4;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    height: 48px;
+    font-size: 16px;
+}
+
+.amount {
+    margin-bottom: 1rem;
+}
+
+.amount select {
+    width: 100px;
+    background-color: #fff !important;
+    border: 1px solid #bdbdbd !important;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .itemHead {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .square {
+        max-width: none;
+        box-shadow: none;
+        border-radius: none;
+        padding: 32px 40px 40px 40px;
+        margin: 5rem 0 15rem;
+    }
+
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+      
+    body {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    
+    .container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .button {
+        margin-bottom: 3rem;
+    }
+}
